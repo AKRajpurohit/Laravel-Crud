@@ -19,5 +19,6 @@ $ composer install
 $ php artisan migrate
 $ php artisan storage:link
 $ php artisan vendor:publish --provider=<span class="hljs-string">"Intervention\Image\ImageServiceProviderLaravelRecent"</span>
+$ php artisan key:generate
 $ php artisan serve
 </code></pre>
