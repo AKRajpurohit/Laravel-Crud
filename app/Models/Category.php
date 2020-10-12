@@ -33,7 +33,7 @@ class Category extends Model {
     }
 
     public function getCategoryPicAttribute() {
-        return !empty($this->category_image) ? config('constants.File_upload.category_resized')."/".$this->category_image : "";
+        return !empty($this->category_image) ? config('constants.File_upload.category_resized')."/".$this->category_image : "/images/no_image.jpg";
     }
 
 }

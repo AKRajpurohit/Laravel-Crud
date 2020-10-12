@@ -29,6 +29,6 @@ class Product extends Model {
         return $this->belongsTo(Category::class, 'category_id', 'id');
     }
   public function getProductPicAttribute(){
-      return !empty($this->product_image) ? config('constants.File_upload.product_resized')."/".$this->product_image : "";
+      return !empty($this->product_image) ? config('constants.File_upload.product_resized')."/".$this->product_image :  "/images/no_image.jpg";
   }
 }

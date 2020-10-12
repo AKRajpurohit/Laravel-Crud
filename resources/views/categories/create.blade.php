@@ -20,11 +20,11 @@
 
         @csrf
         <div class="form-group">
-            <label>Category Name</label>
+            <label>Category Name <span class="danger">*</span></label>
             <input type="text" name="category_name" class="form-control" value="{{ old('category_name') }}" required="true"/>
         </div>
         <div class="form-group">
-            <label>Select Category <span class="danger">*</span></label>
+            <label>Select Category </label>
             <select class="form-control" name="parent_category" product_image>
                 <option value="">- Select Parent Category -</option>
                 @if (isset($parent_categories) && count($parent_categories) > 0)                 
