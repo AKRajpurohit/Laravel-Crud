@@ -15,7 +15,7 @@ $ <span class="hljs-built_in">cd</span> &lt;your project directory&gt;
 $ cp .env.example .env
 $ configure database .env
 $ sudo chmod -R <span class="hljs-number">0777</span> storage/ and bootstrap
-$ php artisan composer install
+$ composer install
 $ php artisan migrate
 $ php artisan storage:link
 $ php artisan vendor:publish --provider=<span class="hljs-string">"Intervention\Image\ImageServiceProviderLaravelRecent"</span>
